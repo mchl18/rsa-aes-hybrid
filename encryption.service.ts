@@ -23,7 +23,7 @@ export class EncryptionService {
 
   async generateTransportMessage(
     payload: string,
-    key: RSAKey
+    partnerPublicKey: string,y
   ): Promise<TransportMessage> {
     const iv = this.aes.getIv();
     const transportKey = await this.aes.generateKey();
@@ -31,7 +31,7 @@ export class EncryptionService {
     const encPayload = await this.aes.encrypt(payload, transportKey, iv);
     const { cipher }: EncyrptionResult = this.rsa.encrypt(
       exportedKey,
-      this.publicKeyString(key)
+      partnerPublicKey,
     );
     return {
       encryptedPayload: arrayBufferToString(encPayload),

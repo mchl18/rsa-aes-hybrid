@@ -1,6 +1,7 @@
 import * as cryptico from 'cryptico-js/dist/cryptico.browser.js';
+import { RSAKey } from './types';
 
-import { RSAKey } from '@mpe/common';
+
 
 /**
  * This class is responsible for generating RSA keys from a passphrase (Super PIN)

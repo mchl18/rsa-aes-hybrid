@@ -1,0 +1,22 @@
+{
+  "name": "rsa-aes-hybrid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mchl18/rsa-aes-hybrid.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mchl18/rsa-aes-hybrid/issues"
+  },
+  "homepage": "https://github.com/mchl18/rsa-aes-hybrid#readme",
+  "dependencies": {
+    "cryptico-js": "^1.1.0"
+  }
+}
